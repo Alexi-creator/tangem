@@ -315,6 +315,7 @@ svg {
   }
   .banner--card .banner__inner > picture {
     grid-row: 1/3;
+    height: 100%;
   }
   .banner--card .banner__button-text-additional {
     display: inline-block;
