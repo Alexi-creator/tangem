@@ -1,0 +1,39 @@
+.banner-wrapper {
+  position: fixed;
+  width: 100%;
+  right: -9999px;
+  bottom: 0;
+  opacity: 0;
+}
+
+.banner-wrapper--active {
+  animation: appearance 0.5s forwards;
+}
+
+.banner-wrapper--deactive {
+  animation: disappearance 1s forwards;
+}
+
+@keyframes appearance {
+  0% {
+    right: -9999px;
+    opacity: 0;
+  }
+
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes disappearance {
+  0% {
+    right: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    right: -9999px;
+    opacity: 0;
+  }
+}
