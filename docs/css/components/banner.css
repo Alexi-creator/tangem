@@ -137,19 +137,19 @@
   transform: unset;
 }
 @container container (min-width: 52.125rem) {
-  .banner__img {
+  .banner .banner__img {
     width: 11.5625rem;
     -o-object-position: -12px 18%;
        object-position: -12px 18%;
   }
-  .banner__info {
+  .banner .banner__info {
     gap: 1.6875rem;
     margin-left: unset;
   }
-  .banner__info-item:not(:last-child) {
+  .banner .banner__info-item:not(:last-child) {
     position: relative;
   }
-  .banner__info-item:not(:last-child):after {
+  .banner .banner__info-item:not(:last-child):after {
     content: "";
     position: absolute;
     top: calc(50% - 0.09375rem);
@@ -159,31 +159,31 @@
     background-color: rgb(var(--color-grey));
     border-radius: var(--radius-round);
   }
-  .banner__title-comma {
+  .banner .banner__title-comma {
     display: none;
   }
-  .banner__promotional {
+  .banner .banner__promotional {
     display: block;
   }
-  .banner__button-btn {
+  .banner .banner__button-btn {
     display: block;
   }
-  .banner__button-icon {
+  .banner .banner__button-icon {
     display: none;
   }
-  .banner--card {
+  .banner .banner--card {
     max-width: 37.5rem;
     margin: 0 1rem 1rem auto;
     border-radius: var(--radius-medium);
   }
-  .banner--card .banner__inner {
+  .banner .banner--card .banner .banner__inner {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem 2rem 1rem 1rem;
   }
-  .banner--card .banner__button-text-additional {
+  .banner .banner--card .banner .banner__button-text-additional {
     display: inline-block;
   }
-  .banner--card .banner__img {
+  .banner .banner--card .banner .banner__img {
     position: relative;
     top: 0;
     left: 0;
@@ -198,24 +198,24 @@
   }
 }
 @container container (min-width: 108rem) {
-  .banner__inner {
+  .banner .banner__inner {
     padding: 0 3.75rem 0 0;
   }
-  .banner__img {
+  .banner .banner__img {
     width: 13.25rem;
     -o-object-position: 15px 18%;
        object-position: 15px 18%;
   }
-  .banner__promotional {
+  .banner .banner__promotional {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
   }
-  .banner__promotional-checkout {
+  .banner .banner__promotional-checkout {
     display: block;
   }
-  .banner__cross {
+  .banner .banner__cross {
     display: block;
   }
 }

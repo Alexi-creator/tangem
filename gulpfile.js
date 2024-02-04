@@ -24,7 +24,6 @@ import { otfToTtf, ttfToWoff, fontStyle } from "./gulp/tasks/fonts.js";
 import { svgSprive } from "./gulp/tasks/svgSprive.js";
 import { zip } from "./gulp/tasks/zip.js";
 import { ftp } from "./gulp/tasks/ftp.js";
-import { vendorCSS } from "./gulp/tasks/connectingVendors.js";
 
 function watcher() {
   gulp.watch(path.watch.files, copy);
@@ -39,7 +38,7 @@ export { svgSprive };
 // Последовательная обработка шрифтов
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontStyle);
 
-const mainTasks = gulp.series(fonts, svgSprive, vendorCSS, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.series(fonts, svgSprive, gulp.parallel(copy, html, scss, js, images));
 
 // сценарии выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
