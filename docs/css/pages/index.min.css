@@ -149,6 +149,9 @@ svg {
   padding: 0 1.5rem 0 0;
   gap: 1.12rem;
 }
+.banner__inner > picture {
+  height: 3.375rem;
+}
 .banner__img {
   width: 9.9375rem;
   height: 3.375rem;
@@ -309,6 +312,9 @@ svg {
   .banner--card .banner__inner {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem 2rem 1rem 1rem;
+  }
+  .banner--card .banner__inner > picture {
+    grid-row: 1/3;
   }
   .banner--card .banner__button-text-additional {
     display: inline-block;
