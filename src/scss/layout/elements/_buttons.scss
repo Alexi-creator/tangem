@@ -1,0 +1,24 @@
+.btn {
+  $root: &;
+
+  height: 2.375rem;
+  display: inline-flex;
+  gap: 0.5rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--radius-big);
+  font-weight: 500;
+  background-color: rgb(var(--color-primary));
+  color: rgb(var(--color-white));
+  transition: var(--transition-base);
+  user-select: none;
+  cursor: pointer;
+
+  &#{$root}--color-white {
+    color: rgb(var(--color-black));
+    background-color: rgb(var(--color-white));
+
+    &:hover {
+
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "es2015",
+    "module": "ES6",
+    "moduleResolution": "node",
+    "lib": [
+      "dom", "es6", "dom.iterable"
+    ]
+  },
+  "include": [
+    "./globals.d.ts"
+  ]
+}

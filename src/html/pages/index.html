@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include("../layout/head.html", {
+    "title": "index Page",
+    "nameFile": "index",
+  })
+  <body>
+    <main class="main">
+      <div class="container">
+        @@include("../components/banner.html", {
+          extraClass: "banner-top",
+        })
+      </div>
+      <div class="banner-wrapper container">
+        @@include("../components/banner.html", {
+          extraClass: "banner-bottom banner--card",
+        })
+      </div>
+    </main>
+  </body>
+</html>

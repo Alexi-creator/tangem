@@ -1,0 +1,24 @@
+:root {
+  // colors
+  --color-primary: 215, 168, 48;
+  --color-black: 11, 11, 11;
+  --color-grey: 52, 52, 52;
+  --color-grey-dark: 35, 35, 35;
+  --color-grey-light: 108, 108, 112;
+  --color-white: 255, 255, 255;
+  
+  // transition
+  --transition-base: all 0.2s linear;
+
+  // z-index
+  --z-first: 1;
+  --z-fixed: 100;
+  --z-popup: 1000;
+  --z-over: 1010;
+  --z-top: 9999;
+
+  // redius
+  --radius-medium: 1rem;
+  --radius-big: 6.25rem;
+  --radius-round: 68rem;
+}
