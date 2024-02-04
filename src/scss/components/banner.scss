@@ -170,114 +170,106 @@
   }
 
   @container container (min-width: 52.125rem) {
-    .banner {
-      $block: &;
+    &__img {
+      width: 11.5625rem;
+      object-position: -12px 18%;
+    }
 
-      &__img {
-        width: 11.5625rem;
-        object-position: -12px 18%;
-      }
+    &__info {
+      gap: 1.6875rem;
+      margin-left: unset;
 
-      &__info {
-        gap: 1.6875rem;
-        margin-left: unset;
+      &-item {
+        &:not(:last-child) {
+          position: relative;
 
-        &-item {
-          &:not(:last-child) {
-            position: relative;
-
-            &:after {
-              content: "";
-              position: absolute;
-              top: calc(50% - (0.1875rem / 2)); 
-              right: calc(-0.75rem - 0.1875rem);
-              width: 0.1875rem;
-              height: 0.1875rem;
-              background-color: rgb(var(--color-grey));
-              border-radius: var(--radius-round);
-            }
+          &:after {
+            content: "";
+            position: absolute;
+            top: calc(50% - (0.1875rem / 2)); 
+            right: calc(-0.75rem - 0.1875rem);
+            width: 0.1875rem;
+            height: 0.1875rem;
+            background-color: rgb(var(--color-grey));
+            border-radius: var(--radius-round);
           }
         }
       }
+    }
 
-      &__title {
-        &-comma {
-          display: none;
-        }
+    &__title {
+      &-comma {
+        display: none;
       }
+    }
 
-      &__promotional {
+    &__promotional {
+      display: block;
+    }
+
+    &__button {
+      &-btn {
         display: block;
       }
 
-      &__button {
-        &-btn {
-          display: block;
-        }
+      &-icon {
+        display: none;
+      }
+    }
 
-        &-icon {
-          display: none;
+    &--card {
+      max-width: 37.5rem;
+      margin: 0 1rem 1rem auto;
+      border-radius: var(--radius-medium);
+
+      #{$block}__inner {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem 2rem 1rem 1rem;
+      }
+
+      #{$block}__button {
+        &-text-additional {
+          display: inline-block;
         }
       }
 
-      &--card {
-        max-width: 37.5rem;
-        margin: 0 1rem 1rem auto;
-        border-radius: var(--radius-medium);
-
-        #{$block}__inner {
-          grid-template-columns: repeat(2, 1fr);
-          padding: 1rem 2rem 1rem 1rem;
-        }
-
-        #{$block}__button {
-          &-text-additional {
-            display: inline-block;
-          }
-        }
-
-        #{$block}__img {
-          position: relative;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          grid-row: 1 / 3;
-          width: auto;
-          height: auto;
-          object-fit: cover;
-          object-position: 0 0;
-        }
+      #{$block}__img {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        grid-row: 1 / 3;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        object-position: 0 0;
       }
     }
   }
 
   @container container (min-width: 108rem) {
-    .banner {
-      $block: &;
+    &__inner {
+      padding: 0 3.75rem 0 0;
+    }
+  
+    &__img {
+      width: 13.25rem;
+      object-position: 15px 18%;
+    }
+  
+    &__promotional {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
 
-      &__inner {
-        padding: 0 3.75rem 0 0;
-      }
-  
-      &__img {
-        width: 13.25rem;
-        object-position: 15px 18%;
-      }
-  
-      &__promotional {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.25rem;
-  
-        &-checkout {
-          display: block;
-        }
-      }
-  
-      &__cross {
+      &-checkout {
         display: block;
       }
+    }
+  
+    &__cross {
+      display: block;
     }
   }
 }
